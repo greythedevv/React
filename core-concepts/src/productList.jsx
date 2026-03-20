@@ -13,18 +13,18 @@ const product = [{
     Price: 499
 }]
 
-    return <div>
-        <h2>Our Products</h2>
-        {
-            product.map((product)=>{
+const productElement =  product.map((product)=>{
                 return(
-                    <div>
+                    <div key={product.id} >
                         <h3>{product.name}</h3>
                         <p>Price: ${product.Price}</p>
-                        
+
                     </div>
                 )
             })
-        }
+
+    return <div >
+        <h2>Our Products</h2>
+        {productElement}
     </div>
 }
