@@ -4,14 +4,14 @@ import {Button} from './Button'
 import  {Product} from "./products"
 import { Greeting } from './Greeting'
 import {UserDetails} from './userDetails'
-
+import { ProductList } from './productList'
 
 
 function App() {
 
   return <div>
-
-    <UserDetails name='babatunde' isOnline={true} />
+    <ProductList/>
+    <UserDetails name='babatunde' isOnline={true} isPremium={true} isNew={true}/>
      <UserDetails name='Adewole' isOnline={false} />
     <Greeting name='Bruce' message='Good Morning'/>
     <Greeting name='Clark'/>
