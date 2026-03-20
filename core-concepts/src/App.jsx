@@ -1,0 +1,29 @@
+import './App.css'
+import {Welcome} from './Welcome'
+import {Button} from './Button'
+import  {Product} from "./products"
+import { Greeting } from './Greeting'
+
+
+function App() {
+
+  return <div>
+
+    <Greeting name='Bruce' message='Good Morning'/>
+    <Greeting name='Clark'/>
+    <Greeting message='Welcome'/>
+    <Greeting/>
+
+
+    <h1>Welcome to react course</h1>
+    <Welcome />
+    <Product title ="how to become"
+         price={200} 
+         inStock={true} 
+         categories={["Electronics","Computers", "Gaming"]}/>
+    <Button/>
+  </div>
+   
+}
+
+export default App
