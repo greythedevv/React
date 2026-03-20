@@ -3,12 +3,16 @@ import {Welcome} from './Welcome'
 import {Button} from './Button'
 import  {Product} from "./products"
 import { Greeting } from './Greeting'
+import {UserDetails} from './userDetails'
+
 
 
 function App() {
 
   return <div>
 
+    <UserDetails name='babatunde' isOnline={true} />
+     <UserDetails name='Adewole' isOnline={false} />
     <Greeting name='Bruce' message='Good Morning'/>
     <Greeting name='Clark'/>
     <Greeting message='Welcome'/>
