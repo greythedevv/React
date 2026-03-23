@@ -38,7 +38,7 @@ function App() {
         {
           pets.map((pet, index) => (
             <li key={index}>
-              <h1>{pet.name}</h1>
+              <h2>{pet.name}</h2>
               <p>{pet.description}</p>
               <img src={pet.image} 
                 alt={pet.name} 
