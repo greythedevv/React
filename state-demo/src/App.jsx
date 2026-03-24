@@ -3,14 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import { Counter } from './counter'
-
+import { SimpleCounter } from './counter'
+import { PreviousStateCounter } from './previousStateCounter'
+import {BatchingCounter} from "./batchingCounter"
+import { UserProfile } from './userProfile'
 function App() {
 
 
   return (
     <>
-    <Counter/>
+    <UserProfile/>
+    <BatchingCounter/>
+    <SimpleCounter/>
+     <PreviousStateCounter/>
      <h1>Codevolution React Course</h1>
     </>
   )

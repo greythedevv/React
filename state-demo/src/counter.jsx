@@ -1,14 +1,20 @@
 import { useState } from "react"
 
-export const Counter = ()=>{
+export const SimpleCounter = ()=>{
+ const [count, setCount] = useState(0)
 
-    let[count, setCount] = useState(0)
-    console.log("Counter component rendered")
-    const handleClick = ()=>{
-       setCount(count ++)
-        console.log(count)
-    }
-    return (
-        <button onClick={handleClick}>count: {count}</button>
-    )
+ const handleClick =()=>{
+    setCount(count+1)
+    setCount(count+5)
+    setCount(count+10)
+ }
+  return (
+<>
+<h2>counter</h2>
+<button onClick={handleClick}>incease {count}</button>
+</>
+
+  )
+
+
 }
