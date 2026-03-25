@@ -7,15 +7,24 @@ import { SimpleCounter } from './counter'
 import { PreviousStateCounter } from './previousStateCounter'
 import {BatchingCounter} from "./batchingCounter"
 import { UserProfile } from './userProfile'
+import { TodoList } from './todolist'
+import { ShoppingCart } from './shoppingCart'
+import { CounterWithReducer } from './CounterwithReducer'
+
 function App() {
 
 
   return (
     <>
-    <UserProfile/>
+    
+    <CounterWithReducer/>
+    {/* <ShoppingCart/> */}
+
+    {/* <TodoList/> */}
+    {/* <UserProfile/>
     <BatchingCounter/>
     <SimpleCounter/>
-     <PreviousStateCounter/>
+     <PreviousStateCounter/> */}
      <h1>Codevolution React Course</h1>
     </>
   )
